@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="this is an global worming project">
+    <title>global</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Stationary Energy',     20],
+          ['Transportation',      30],
+          ['Water', 40],
+        ]);
+
+        var options = {
+          title: 'Global greenhouse gas emmission by Methane gas,DHAKA'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+
+
+      
+
+
+    
+
+      google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Dogs');
+
+      data.addRows([
+        [0, 0],   [1, 0],  [2, 6.0],  [3, 2.2],  [4, 2.1],  [5, 3.0],
+        [6, 6.3],  [7, 2.4],  [8, 2.1],  [9, 4.5],  [10, 2.1], [11, 2.2],
+        [12, 2.4], [13, 1], [14, 4.2], [15, 2], [16, 3.8], [17, 4],
+        [18, 3.2], [19, 3.9], [20, 4.5], [21, 3], [22, 3], [23, 7.0]
+     
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Year'
+        },
+        vAxis: {
+          title:'Methane Emissions(Million Metrik Tons),CHITTAGONG'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+         
+    }
+
+    google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawLineChart);
+      function drawLineChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['2023 Year',     280],
+          ['2021 Year',     200],
+          ['2019 Year',     120],
+          ['2017 Year',     400],
+          ['2015 Year',    75],
+          ['2013 Year',    65],
+          ['2011 Year',280],
+          ['2009 Year',200],
+          ['2007 Year',310],
+          ['2007 Year',270],
+          ['2003 Year',60],
+          ['2001 Year',280]
+          
+        ]);
+
+        var options = {
+          title: 'Methane Emissions(Million Metrik Tons),DHAKA',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+
+      google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawSeetBasic);
+
+function drawSeetBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Year');
+      data.addColumn('number', 'Methane Emission');
+
+      data.addRows([
+        [0, 0],   [20, 1],  [22, 1.5],  [25, 2],  [27, 2.5],  [30, 3.5],
+        [32, 4],  [35, 5],  [37, 5.5],  [40, 7]
+       
+     
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Year'
+        },
+        vAxis: {
+          title:'Methane Emissions(Million Metrik Tons),BANGLADESH'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chartSitdiv'));
+        chart.draw(data, options);
+         
+    }
+
+    </script>
+</head>
+<body>
+  <!--Navbar start heare-->
+    <nav>
+        <ul class="nav-upper flex-space-around">
+            <li class="nav_list">
+                <a href="index.html" 
+                class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="cause.html" class="nav_link">Blog About</a>
+            </li>
+            <!-- Repeat similar updates for other menu items -->
+            
+            <li class="nav_list">
+                <a href="climate.html" 
+                class="nav_link">Sattelite View </a>
+            </li>
+            <li class="nav_list">
+                <a href="protantial.html" 
+                class="nav_link">Prediction</a>
+            </li>
+            <li class="nav_list">
+                <a href="protantial.html" 
+                class="nav_link">Explore</a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav_list">
+                <a href="/index.html" class="nav_brand
+                nav_link">Climate Change</a>
+
+            </li>
+
+        </ul>
+    </nav>
+    <!--Navbar end heare-->
+    <main>
+        <div class="pic1">
+            <h3> <b style="color:rgb(255,253,208);font-size:2rem;">ClimaAction</b><br>
+                 Analysis all about scenario, <br>prediction, exploration</h3>
+            
+            <img src="image/climat.webp" alt="A beautiful sunset">
+           
+        </div>
+        <div class="text">
+        <h1> PREDICTION OF BANGLADESH</h1>
+        </div>
+        <p>.The adverse effects of climate change on Bangladesh are alarming. Rising sea levels threaten to displace millions, damaging homes, agriculture, and infrastructure. Intense cyclones, heatwaves, and droughts will strain resources and reduce crop yields, while soil salinization will worsen food insecurity. Large-scale displacement could lead to overcrowded cities and social instability. Without urgent adaptation, Bangladesh faces severe environmental, economic, and social challenges.</p>
+        <div class="pic2">
+            <h2>bangladesh</h2>
+            <img src="image/mapbds.jpg" alt="map of bangladesh">
+        </div><br>
+
+       
+       
+       <div class="text1">
+        <h1> CLIMATE CHANGE OF DHAKA & CHITTAGONG</h1>
+        </div>  
+        <p>.Methane (CH₄) emissions in Dhaka and Chittagong mainly come from waste disposal, agriculture, and untreated sewage. Landfills and rice paddies release methane as organic material decomposes, while livestock and poor waste management add to the problem. These emissions contribute significantly to climate change and environmental challenges in both cities..
+           </p>
+
+    <div class="challenge">
+        
+        <div id="piechart" style="width:900px; height: 360px;"></div>
+        <img src="image/chattagonj.png" alt="map of bangladesh">
+    </div><br>
+    <div class="text1">
+        <h1> DEFORESTATION OF DHAKA & CHITTAGONG</h1>
+        </div>  <br>
+       
+            <div class="challenge-deforestation">
+        
+                <div id="donutchart" style="width: 900px; height: 360px;"></div>
+            <div id="chart_div"style="width: 900px; height: 360px;" ></div>
+            </div><br><br>
+
+
+            <div class="challenge-deforestation2">
+                <h1><u> Project Methane Emission In Bangladesh (2020-2040)</u></h1><br>
+                <div id="chartSitdiv" style="width: 700px; height: 350px;"></div>
+            </div><br><br>
+            
+
+        
+    
+    </main>
+   <!--footer start here-->
+<footer class="footer">
+    <div>
+        <label for="welcome">Thank you</label>
+        
+    </div>
+    <div>
+        
+        <p>©copyright 2024</p>
+
+    </div>
+</footer>
+<script src="works.js"></script>
+    <!--footer end here-->
+</body>
+</html>
